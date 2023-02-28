@@ -1,0 +1,631 @@
+@font-face {
+    font-family: "HelveticaNeueLTProLt";
+    src: url("../fonts/HelveticaNeueLTProLt.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProMd";
+    src: url("../fonts/HelveticaNeueLTProMd.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProRoman";
+    src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url("../fonts/Merriweather-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+/*
+font-family: "HelveticaNeueLTProLt", sans-serif;
+font-family: "HelveticaNeueLTProMd", sans-serif;
+font-family: "HelveticaNeueLTProRoman", sans-serif;
+font-family: "Merriweather-LightItalic", sans-serif;
+font-family: "Montserrat-Light", sans-serif;
+font-family: "Montserrat-Regular", sans-serif;
+font-family: "Roboto-Regular", sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menuMobile {
+    display: none;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem a {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #989696;
+    text-decoration: none;
+    margin-right: 43px;
+}
+
+.menuItem:last-child a {
+    margin-right: 0;
+}
+
+.active a {
+    color: #010101;
+}
+
+.logo {
+    margin: 0 16px;
+}
+
+.headerContent {
+    text-align: center;
+}
+
+.headerTitle {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 44px;
+    line-height: 41px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+    padding-top: 207px;
+    margin: 0px auto 4px;
+}
+
+.headerText {
+    font-family: "Merriweather-LightItalic", serif;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    color: #898888;
+    margin: 0 auto 43px;
+}
+
+.button {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-decoration: none;
+    width: 188px;
+    height: 57px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 206px;
+}
+
+/* about */
+
+.about {
+    background-color: #1d1d1d;
+    height: 1129px;
+    padding-top: 128px;
+    padding-bottom: 271px;
+    background: url(../img/buildings1.png) center 101% repeat-x, 
+                url(../img/buildings2.png) center 101% repeat-x,
+                #1d1d1d;
+}
+
+.aboutInner {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: max-content max-content;
+    grid-gap: 178px;
+    place-content: center center;
+}
+
+.aboutItem {
+    width: 417px;
+    height: 276px;
+    background-color: #181818;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutYear {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    margin-bottom: 27px;
+}
+
+.aboutText {
+    font-family: "Montserrat-Light", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 22px;
+    color: #b7b7b7;
+}
+
+/* team */
+
+.team {
+    height: 745px;
+}
+
+.blockHead {
+    text-align: center;
+}
+
+.blockTitle {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+    margin: 0;
+    padding-top: 138px;
+    margin-bottom: 13px;
+}
+
+.blockText {
+    font-family: "Merriweather-LightItalic", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #898888;
+    margin: 0;
+}
+
+.teamInner {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 127px;
+}
+
+.teamItem {
+    text-align: center;
+}
+
+.teamItemImg {
+    margin-bottom: 29px;
+}
+
+.teamItemTitle {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #464646;
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.teamItemText {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #b3b3b3;
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+.teamIconBox a{
+    font-size: 20px;
+    color: #e4e4e4;
+    transition: 0.2s;
+}
+
+.teamIconBox a:hover {
+    color: #5c5c5c;
+}
+
+/* provide */
+
+.provide {
+    background-color: #181818;
+    padding-bottom: 155px;
+}
+
+.inverse .blockTitle {
+    padding-top: 176px;
+    color: #ffffff;
+}
+
+.inverse .blockText {
+    color: #777777;
+}
+
+.provideInner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 138px;
+}
+
+.provideItem {
+    text-align: center;
+    max-width: 335px;
+}
+
+.provideItem i{
+    color: #ffffff;
+    font-size: 63px;
+    width: 172px;
+    height: 172px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 43px;
+}
+
+.provideItemTitle {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 31px;
+}
+
+.provideItemText {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #383838;
+    margin: 0;
+}
+
+/* contact */
+
+.blockHead .blockTitle .blockText {
+    padding-top: 95px;
+}
+
+.contactIconBox {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 570px;
+    padding-top: 64px;
+    margin: 0 auto;
+}
+
+.contactItem {
+    text-align: center;
+    width: 130px;
+}
+
+.contactItem i {
+    color: #323232;
+    font-size: 21px;
+}
+
+.contactText {
+    margin-bottom: 12px;
+}
+
+.contactText a {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contactText a:hover {
+    color: #4a4a4a;
+    text-decoration: underline;
+}
+
+.contactForm {
+    padding-top: 153px;
+    display: flex;
+    flex-direction: column;
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.contactForm input{
+    height: 52px;
+    padding: 20px;
+    text-align: center;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    border: 1px solid #999999;
+}
+
+.contactName {
+    margin-bottom: 20px;
+}
+
+.contactEmail {
+    margin-bottom: 20px;
+}
+
+.contactNumber {
+    margin-bottom: 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.contactTextArea {
+    padding: 22px;
+    margin-bottom: 21px;
+    height: 195px;
+    resize: none;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    line-height: 26px;
+    border: 1px solid #999999;
+}
+
+.contactForm .contactButton {
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: "HelveticaNeueLTProMd", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    background-color: #161616;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 154px;
+    margin-bottom: 29px;
+}
+
+.footerText {
+    text-align: center;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3b3b3b;
+}
+
+/* media for iPad*/
+
+@media screen and (max-width: 821px) {
+    .container {
+        width: 820px;
+    }
+
+    .about {
+        height: auto;
+        padding-bottom: 200px;
+    }
+
+    .aboutInner {
+        grid-gap: 30px;
+        grid-template-columns: max-content;
+    }
+
+    .team .blockTitle {
+        padding-top: 100px;
+    }
+
+    .provide {
+        padding-bottom: 100px;
+    }
+
+    .provide .blockTitle {
+        padding-top: 100px;
+    }
+
+    .provideInner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .provideItem {
+        max-width: 300px;
+        margin: 0 30px 40px;
+    }
+
+    .contactForm {
+        padding-top: 100px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+}
+
+/* media for iPhone*/
+
+@media screen and (max-width: 376px) {
+    .container {
+        width: 375px;
+    }
+
+    .logo {
+        margin: 0 -15px;
+    }
+
+    .menuDesktop {
+        display: none;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuInner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 5px 0;
+    }
+
+    .menu a {
+        margin: 0;
+    }
+
+    .menuBurger {
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        background-color: black;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .menuBurger span {
+        display: block;
+        position: absolute;
+        background-color: white;
+        height: 4px;
+        width: 30px;
+        top: 18px;
+        left: 5px;
+        right: 5px;
+        transition: background 0s 0.3s;
+    }
+
+    .menuBurger span:after,
+    .menuBurger span:before {
+        position: absolute;
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: white;
+        content: '';
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+    }
+
+    .menuBurger span:after {
+        top: -10px;
+    }
+
+    .menuBurger span:before {
+        bottom: -10px;
+    }
+
+    .menuBurger.close span{
+        background: none;
+    }
+
+    .menuBurger.close span:after {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .menuBurger.close span:before {
+        bottom: 0px;
+        transform: rotate(-45deg);
+    }
+
+    .headerTitle {
+        padding-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        margin-bottom: 100px;
+    }
+
+    .aboutItem {
+        max-width: 340px;
+    }
+
+    .team {
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    .teamInner {
+        padding-top: 100px;
+        flex-wrap: wrap;
+    }
+
+    .teamItem {
+        width: 340px;
+        margin-bottom: 30px;
+    }
+
+    .teamItemText {
+        margin-bottom: 10px;
+    }
+
+    .provideInner {
+        padding-top: 100px;
+    }
+}
