@@ -1,5 +1,3 @@
-alert("S")
-
 $(document).ready(function() {
     // плавна прокрутка меню
 
